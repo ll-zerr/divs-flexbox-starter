@@ -97,6 +97,8 @@ body {
   font-size: 1.25em;
   min-height: 100%;
   background-color: #243D25;
+  display: flex;
+  justify-content: center;
 }
 
 header {
@@ -113,7 +115,7 @@ header, footer {
 
 main {
   background-color: #243D25;
-  height: 250px;
+  min-height: 250px;
   width: 100%;
   border-bottom: 2.5px solid #fff;
   text-align: left;
@@ -135,7 +137,7 @@ footer {
   /*font-weight: 700;*/
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-flow: row wrap;
 }
 
@@ -144,7 +146,7 @@ footer {
   color: #fff;
   line-height: 1.25em;
   font-size: 1.25em;
-  height: 200px;
+  min-height: 200px;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -153,7 +155,7 @@ footer {
 }
 
 .div-1, .div-2 {
-  border-right: 2.5px solid #fff;
+  border-right: 2.5px solid #A2B5BB;
   padding-right: 1em;
 }
 
@@ -274,7 +276,7 @@ span {
 
   .div-3 {
     width: 100%;
-    border-top: 2.5px solid #fff;
+    border-top: 2.5px solid #A2B5BB;
   }
 }
 
@@ -289,15 +291,11 @@ span {
   }
 
   .div-2 {
-    border-top: 2.5px solid #fff;
+    border-top: 2.5px solid #A2B5BB;
   }
 
   .flex-items {
     margin: 0;
-  }
-
-  .custom {
-    order: 5;
   }
 }
 
@@ -311,7 +309,7 @@ span {
   }
 }
 
-@media (min-width: 400px) and (max-width: 600px) {
+ @media (min-width:400px) and (max-width: 600px) {
   body {
     font-size: 1em;
   }
@@ -320,6 +318,7 @@ span {
     margin: auto;
   }
 }
+
 
 /* ==========================================================================
    Print styles.
